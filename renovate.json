@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "config:base"
+    ],
+    "packageRules": [
+        {
+            "packagePatterns": [
+                "*"
+            ],
+            "excludePackageNames": [
+                "com.alibaba:fastjson"
+            ],
+            "excludePackagePatterns": [],
+            "enabled": false
+        },
+        {
+            "packageNames": [
+                "com.alibaba:fastjson"
+            ],
+            "matchCurrentVersion": "(, 1.2.40)",
+            "allowedVersions": "[1.2.44]"
+        },
+        {
+            "packageNames": [
+                "com.alibaba:fastjson"
+            ],
+            "matchCurrentVersion": "(1.2.60, 1.2.69)",
+            "allowedVersions": "[1.2.69]"
+        },
+        {
+            "packageNames": [
+                "com.alibaba:fastjson"
+            ],
+            "matchCurrentVersion": "(1.2.70, )",
+            "allowedVersions": "[1.2.83]"
+        }
+    ]
+}
